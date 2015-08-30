@@ -1,7 +1,7 @@
 package axmlParser
 
 import (
-	"fmt"
+	//"fmt"
 	"io"
 )
 
@@ -75,7 +75,7 @@ func (listener *PlainListener) StartElement(uri, localName, qName string,
 			listener.Manifest.Attrs[localName] = make([]*Attribute, 0)
 		}
 		listener.Manifest.Attrs[localName] = append(listener.Manifest.Attrs[localName], attr)
-		fmt.Println(localName, attr)
+		//fmt.Println(localName, attr)
 	}
 }
 
